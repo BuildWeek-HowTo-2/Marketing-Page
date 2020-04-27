@@ -201,4 +201,28 @@ header .headerNav .navLinks a {
 }
 .about {
   background-color: #E3C291;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-bottom: 1%;
+}
+.about .aboutCTA {
+  padding-right: 10%;
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.about .aboutCTA p {
+  padding: 1% 0;
+}
+.about .aboutText {
+  width: 60%;
+}
+.about .aboutText p {
+  font-size: 1.6rem;
+  padding: 1% 0;
 }
