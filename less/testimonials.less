@@ -1,14 +1,18 @@
 .testimonialsSection{
+    height: 10%;
     .testimonials{
         .flexin(row, space-between, center);
+    
 
         .testimonial{
-            .flexin(row, space-between, stretch);
+            .flexin(row, space-evenly, stretch);
 
-            height: 90px;
+            height: 100%;
 
             img{
-                width: 90px;
+                max-width: 90px;
+                max-height: 90px;
+                object-fit: cover;
                 border-radius: 50%;
             }
 
@@ -17,6 +21,7 @@
                 font-style: italic;
                 width: 80%;
                 align-self: center;
+                margin-left: 1%;
 
             }
         }
