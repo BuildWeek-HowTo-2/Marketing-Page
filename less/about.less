@@ -1,31 +1,47 @@
-.about{
-    background-color: #E3C291;
+.about {
+    
 
     .flexin(row, space-between, stretch);
 
     padding-bottom: 1%;
 
-    .aboutCTA{
+    .aboutCTA {
         padding-right: 10%;
-         
+
         font-weight: bold;
         font-size: 1.8rem;
 
-        p{
+        p {
             padding: 1% 0;
         }
+
+
+        button.create {
+            .button(@primaryColor, 1.4rem);
+
+        }
+
+        button.signIn {
+            .button(@secondaryColor, 1.4rem);
+            padding-left: 10%;
+            padding-right: 10%;
+
+        }
+
 
         .flexin(column, space-around, center);
     }
 
-    .aboutText{
+    .aboutText {
         width: 60%;
 
-        p{
+        p {
             font-size: 1.6rem;
             padding: 1% 0;
         }
-    
-        
+
+        button {
+            .button(@primaryColor, 1.4rem);
+        }
     }
 }

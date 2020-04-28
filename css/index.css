@@ -143,7 +143,7 @@ h3 {
 header {
   width: 100%;
   height: 50px;
-  background-color: #346F2F;
+  background-color: #45933E;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -176,7 +176,7 @@ header .headerNav .navLinks a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: url(/images/fachy-marin-Wm7-Z1ZOi0Y-unsplash.jpg);
+  background-image: url(/images/jack-carter-tMGMINwFOtI-unsplash.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -185,10 +185,21 @@ header .headerNav .navLinks a {
 .hero .itemOne {
   align-self: flex-start;
   padding-top: 1%;
+  background: radial-gradient(44.82% 88.39% at 49.87% 52.65%, rgba(255, 255, 255, 0.2) 50.36%, rgba(126, 124, 124, 0) 100%);
 }
 .hero .itemTwo {
   align-self: flex-end;
   padding-bottom: 1%;
+  background: radial-gradient(44.82% 88.39% at 49.87% 52.65%, rgba(255, 255, 255, 0.2) 50.36%, rgba(126, 124, 124, 0) 100%);
+}
+.hero button {
+  background-color: #45933E;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: bolder;
+  padding: 1% 4%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
 }
 .hero div {
   width: 30%;
@@ -200,7 +211,6 @@ header .headerNav .navLinks a {
   text-align: center;
 }
 .about {
-  background-color: #E3C291;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -219,12 +229,44 @@ header .headerNav .navLinks a {
 .about .aboutCTA p {
   padding: 1% 0;
 }
+.about .aboutCTA button.create {
+  background-color: #45933E;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  padding: 1% 4%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.about .aboutCTA button.signIn {
+  background-color: #865E22;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  padding: 1% 4%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 .about .aboutText {
   width: 60%;
 }
 .about .aboutText p {
   font-size: 1.6rem;
   padding: 1% 0;
+}
+.about .aboutText button {
+  background-color: #45933E;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  padding: 1% 4%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.topHowTos {
+  background-color: #E3C291;
 }
 .topHowTos div {
   display: flex;
@@ -249,5 +291,71 @@ header .headerNav .navLinks a {
 .topHowTos div .featured img {
   width: 96px;
   height: 77px;
-  padding: 2% 0;
+  margin: 2% 0;
+}
+.testimonialsSection .testimonials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonialsSection .testimonials .testimonial {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 90px;
+}
+.testimonialsSection .testimonials .testimonial img {
+  width: 90px;
+  border-radius: 50%;
+}
+.testimonialsSection .testimonials .testimonial p {
+  font-size: 1.6rem;
+  font-style: italic;
+  width: 80%;
+  align-self: center;
+}
+.plans {
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.plans h2 {
+  font-weight: bolder;
+  font-size: 3.6rem;
+}
+.plans button.user {
+  background-color: #865E22;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: bolder;
+  padding: 1% 4%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.plans button.creator {
+  background-color: #45933E;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: bolder;
+  padding: 1% 4%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+footer {
+  background-color: #865E22;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  justify-self: center;
+  font-size: 1.6rem;
+}
+footer nav.footerNav {
+  justify-self: flex-end;
 }
