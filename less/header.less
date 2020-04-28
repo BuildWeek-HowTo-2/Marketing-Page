@@ -13,10 +13,18 @@ header{
             width: 50%;
             .flexin(row, space-around, center);
 
+            @media @phone{
+                width: 80%;
+            }
+
             a{
                 color: white;
                 font-size: 1.6rem;
                 text-decoration: none;
+
+                @media @phone{
+                    font-size: 1.4rem;
+                }
             }
         }
     }

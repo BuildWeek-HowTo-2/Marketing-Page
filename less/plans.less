@@ -1,6 +1,10 @@
 .plans{
     height: 20vh;
     .flexin(row, space-around, center);
+    
+    @media @phone{
+        flex-direction: column;
+    }
 
     h2{
         font-weight: bolder;
@@ -9,13 +13,22 @@
         @media @tablet{
             font-size: 2.4rem;
         }
+
+        @media @phone{
+            font-size: 2rem;
+            order: -1;
+        }
     }
 
     button.user{
         .button(@secondaryColor, 2.4rem, @secondaryHover);
 
         @media @tablet{
-            .button(@secondaryColor, 2rem, @secondaryHover);
+            font-size: 2rem;
+        }
+
+        @media @phone{
+            font-size: 1.4rem;
         }
     }
 
@@ -23,7 +36,11 @@
         .button(@primaryColor, 2.4rem, @primaryHover);
 
         @media @tablet{
-            .button(@primaryColor, 2rem, @primaryHover);
+            font-size: 2rem;
+        }
+
+        @media @phone{
+            font-size: 1.4rem;
         }
     }
 }

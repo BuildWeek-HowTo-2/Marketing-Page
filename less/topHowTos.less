@@ -4,6 +4,10 @@
 
         .flexin(row, space-between, stretch);
 
+        @media @phone{
+            .flexin(column, stretch, center);
+        }
+
         .featured {
             .flexin(column, center, center);
 
@@ -12,11 +16,21 @@
                     height: 25px;
                     width: 25px;
                     color: #F7E32C;
+
+                }
+
+                @media @phone{
+                    flex-direction: row;
                 }
             }
 
             h5 {
                 font-size: 2.4rem;
+
+                @media @phone{
+                   font-size: 1.6rem;
+                   margin: 2% 0;
+                }
             }
 
             img {

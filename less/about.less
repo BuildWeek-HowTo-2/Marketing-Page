@@ -3,6 +3,10 @@
 
     .flexin(row, space-between, stretch);
 
+    @media @phone{
+        .flexin(column, center, stretch);
+    }
+
     padding-bottom: 1%;
 
     .aboutCTA {
@@ -13,6 +17,14 @@
 
         @media @tablet{
             padding-right: 5%;
+        }
+
+        @media @phone{
+           margin: 2% 0;
+           h4{
+               margin: 2% 0;
+           }
+
         }
 
         p {
@@ -39,6 +51,10 @@
     .aboutText {
         width: 60%;
 
+        @media @phone{
+            width: 100%;
+        }
+
         p {
             font-size: 1.6rem;
             padding: 1% 0;
@@ -50,6 +66,10 @@
 
         button {
             .button(@primaryColor, 1.4rem, @primaryHover);
+
+            @media @phone{
+                margin: 2% 0;
+            }
         }
     }
 }

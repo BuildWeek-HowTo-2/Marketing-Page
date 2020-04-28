@@ -116,7 +116,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  border: 1px solid grey;
 }
 html {
   font-size: 62.5%;
@@ -145,6 +144,12 @@ h3 {
     font-size: 2rem;
   }
 }
+@media (max-width: 500px) {
+  h3 {
+    font-size: 1.6rem;
+    font-weight: bolder;
+  }
+}
 header {
   width: 100%;
   height: 50px;
@@ -169,10 +174,20 @@ header .headerNav .navLinks {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header .headerNav .navLinks {
+    width: 80%;
+  }
+}
 header .headerNav .navLinks a {
   color: white;
   font-size: 1.6rem;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  header .headerNav .navLinks a {
+    font-size: 1.4rem;
+  }
 }
 .hero {
   width: 100vw;
@@ -190,6 +205,11 @@ header .headerNav .navLinks a {
 @media (max-width: 800px) {
   .hero {
     height: 80vh;
+  }
+}
+@media (max-width: 500px) {
+  .hero {
+    height: 50vh;
   }
 }
 .hero .itemOne {
@@ -228,12 +248,25 @@ header .headerNav .navLinks a {
     font-size: 3rem;
   }
 }
+@media (max-width: 500px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
 .about {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
   padding-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
 }
 .about .aboutCTA {
   padding-right: 10%;
@@ -247,6 +280,14 @@ header .headerNav .navLinks a {
 @media (max-width: 800px) {
   .about .aboutCTA {
     padding-right: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .about .aboutCTA {
+    margin: 2% 0;
+  }
+  .about .aboutCTA h4 {
+    margin: 2% 0;
   }
 }
 .about .aboutCTA p {
@@ -281,6 +322,11 @@ header .headerNav .navLinks a {
 .about .aboutText {
   width: 60%;
 }
+@media (max-width: 500px) {
+  .about .aboutText {
+    width: 100%;
+  }
+}
 .about .aboutText p {
   font-size: 1.6rem;
   padding: 1% 0;
@@ -302,6 +348,11 @@ header .headerNav .navLinks a {
 .about .aboutText button:hover {
   background-color: #79C473;
 }
+@media (max-width: 500px) {
+  .about .aboutText button {
+    margin: 2% 0;
+  }
+}
 .topHowTos {
   background-color: #E3C291;
 }
@@ -310,6 +361,14 @@ header .headerNav .navLinks a {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
+}
+@media (max-width: 500px) {
+  .topHowTos div {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+  }
 }
 .topHowTos div .featured {
   display: flex;
@@ -322,8 +381,19 @@ header .headerNav .navLinks a {
   width: 25px;
   color: #F7E32C;
 }
+@media (max-width: 500px) {
+  .topHowTos div .featured .starRating {
+    flex-direction: row;
+  }
+}
 .topHowTos div .featured h5 {
   font-size: 2.4rem;
+}
+@media (max-width: 500px) {
+  .topHowTos div .featured h5 {
+    font-size: 1.6rem;
+    margin: 2% 0;
+  }
 }
 .topHowTos div .featured img {
   width: 96px;
@@ -333,11 +403,27 @@ header .headerNav .navLinks a {
 .testimonialsSection {
   height: 10%;
 }
+@media (max-width: 500px) {
+  .testimonialsSection h3 {
+    width: 50%;
+    margin-top: 2%;
+  }
+}
 .testimonialsSection .testimonials {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .testimonialsSection .testimonials {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .testimonialsSection .testimonials div.laurie {
+    flex-direction: row-reverse;
+  }
 }
 .testimonialsSection .testimonials .testimonial {
   display: flex;
@@ -352,6 +438,13 @@ header .headerNav .navLinks a {
   object-fit: cover;
   border-radius: 50%;
 }
+@media (max-width: 500px) {
+  .testimonialsSection .testimonials .testimonial img {
+    margin: 2%;
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
 .testimonialsSection .testimonials .testimonial p {
   font-size: 1.6rem;
   font-style: italic;
@@ -364,12 +457,22 @@ header .headerNav .navLinks a {
     font-size: 1.4rem;
   }
 }
+@media (max-width: 500px) {
+  .testimonialsSection .testimonials .testimonial p {
+    margin: 3% 2%;
+  }
+}
 .plans {
   height: 20vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .plans {
+    flex-direction: column;
+  }
 }
 .plans h2 {
   font-weight: bolder;
@@ -378,6 +481,12 @@ header .headerNav .navLinks a {
 @media (max-width: 800px) {
   .plans h2 {
     font-size: 2.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .plans h2 {
+    font-size: 2rem;
+    order: -1;
   }
 }
 .plans button.user {
@@ -394,16 +503,12 @@ header .headerNav .navLinks a {
 }
 @media (max-width: 800px) {
   .plans button.user {
-    background-color: #865E22;
-    color: white;
     font-size: 2rem;
-    font-weight: bolder;
-    padding: 1% 4%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
   }
-  .plans button.user:hover {
-    background-color: #CF9540;
+}
+@media (max-width: 500px) {
+  .plans button.user {
+    font-size: 1.4rem;
   }
 }
 .plans button.creator {
@@ -420,16 +525,12 @@ header .headerNav .navLinks a {
 }
 @media (max-width: 800px) {
   .plans button.creator {
-    background-color: #45933E;
-    color: white;
     font-size: 2rem;
-    font-weight: bolder;
-    padding: 1% 4%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
   }
-  .plans button.creator:hover {
-    background-color: #79C473;
+}
+@media (max-width: 500px) {
+  .plans button.creator {
+    font-size: 1.4rem;
   }
 }
 footer {
@@ -444,6 +545,11 @@ footer p {
   margin-left: 2%;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  footer p {
+    font-size: 1.2rem;
+  }
+}
 footer .footerNav {
   width: 40%;
   display: flex;
@@ -451,9 +557,19 @@ footer .footerNav {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 500px) {
+  footer .footerNav {
+    width: 50%;
+  }
+}
 footer .footerNav a {
   color: white;
   font-size: 1.6rem;
   text-decoration: none;
   padding-left: 2%;
+}
+@media (max-width: 500px) {
+  footer .footerNav a {
+    font-size: 1.2rem;
+  }
 }
