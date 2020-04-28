@@ -573,3 +573,85 @@ footer .footerNav a {
     font-size: 1.2rem;
   }
 }
+.titleBar {
+  height: 50vh;
+  width: 100vw;
+  background-image: url(/images/screwdriver.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.titleBar h2 {
+  font-size: 4rem;
+  font-style: bold;
+  margin-top: 5%;
+}
+img {
+  height: 500px;
+}
+.topSection,
+.bottomSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.topSection p,
+.bottomSection p {
+  font-size: 1.8rem;
+}
+.aboutCTA {
+  padding-right: 10%;
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .aboutCTA {
+    padding-right: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .aboutCTA {
+    margin: 2% 0;
+  }
+  .aboutCTA h4 {
+    margin: 2% 0;
+  }
+}
+.aboutCTA p {
+  padding: 1% 0;
+}
+.aboutCTA button.create {
+  background-color: #45933E;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  padding: 1% 4%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.aboutCTA button.create:hover {
+  background-color: #79C473;
+}
+.aboutCTA button.signIn {
+  background-color: #865E22;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  padding: 1% 4%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.aboutCTA button.signIn:hover {
+  background-color: #CF9540;
+}
