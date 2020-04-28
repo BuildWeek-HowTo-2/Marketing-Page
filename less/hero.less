@@ -1,8 +1,11 @@
 .hero{
     width: 100vw;
     height: 100vh;
-    // background-image: url(/images/fachy-marin-Wm7-Z1ZOi0Y-unsplash.jpg);
-    // background-size: contain;
+
+    @media @tablet{
+        height: 80vh;
+    }
+
     .flexin(column, space-around, center);
     .itemOne{
         align-self: flex-start;
@@ -16,7 +19,7 @@
     }
 
     button{
-        .button(@primaryColor, 2.4rem);
+        .button(@primaryColor, 2.4rem, @primaryHover);
     }
 
     div{
@@ -28,6 +31,10 @@
         font-weight: bolder;
         font-size: 4rem;
         text-align: center;
+
+        @media @tablet{
+            font-size: 3rem;
+        }
     }
 
     background-image: url(/images/jack-carter-tMGMINwFOtI-unsplash.jpg);

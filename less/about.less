@@ -11,18 +11,22 @@
         font-weight: bold;
         font-size: 1.8rem;
 
+        @media @tablet{
+            padding-right: 5%;
+        }
+
         p {
             padding: 1% 0;
         }
 
 
         button.create {
-            .button(@primaryColor, 1.4rem);
+            .button(@primaryColor, 1.4rem, @primaryHover);
 
         }
 
         button.signIn {
-            .button(@secondaryColor, 1.4rem);
+            .button(@secondaryColor, 1.4rem, @secondaryHover);
             padding-left: 10%;
             padding-right: 10%;
 
@@ -38,10 +42,14 @@
         p {
             font-size: 1.6rem;
             padding: 1% 0;
+
+            @media @tablet{
+                font-size: 1.4rem;
+            }
         }
 
         button {
-            .button(@primaryColor, 1.4rem);
+            .button(@primaryColor, 1.4rem, @primaryHover);
         }
     }
 }
