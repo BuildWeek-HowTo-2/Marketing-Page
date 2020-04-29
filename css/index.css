@@ -590,22 +590,31 @@ footer .footerNav a {
   font-style: bold;
   margin-top: 5%;
 }
-img {
+.main img {
   height: 500px;
 }
-.topSection,
-.bottomSection {
+.main .topText,
+.main .bottomText {
+  width: 40%;
+}
+.main .topSection,
+.main .bottomSection {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
 }
-.topSection p,
-.bottomSection p {
+.main .topSection h3,
+.main .bottomSection h3 {
+  width: 100%;
+}
+.main .topSection p,
+.main .bottomSection p {
   font-size: 1.8rem;
+  margin-top: 4%;
 }
-.aboutCTA {
-  padding-right: 10%;
+.instructorCTA {
+  padding: 5%;
   font-weight: bold;
   font-size: 1.8rem;
   display: flex;
@@ -613,23 +622,23 @@ img {
   justify-content: space-around;
   align-items: center;
 }
+.instructorCTA h4 {
+  padding: 2% 0;
+}
 @media (max-width: 800px) {
-  .aboutCTA {
+  .instructorCTA {
     padding-right: 5%;
   }
 }
 @media (max-width: 500px) {
-  .aboutCTA {
+  .instructorCTA {
     margin: 2% 0;
   }
-  .aboutCTA h4 {
+  .instructorCTA h4 {
     margin: 2% 0;
   }
 }
-.aboutCTA p {
-  padding: 1% 0;
-}
-.aboutCTA button.create {
+.instructorCTA button.create {
   background-color: #45933E;
   color: white;
   font-size: 1.4rem;
@@ -638,10 +647,10 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
 }
-.aboutCTA button.create:hover {
+.instructorCTA button.create:hover {
   background-color: #79C473;
 }
-.aboutCTA button.signIn {
+.instructorCTA button.signIn {
   background-color: #865E22;
   color: white;
   font-size: 1.4rem;
@@ -652,6 +661,6 @@ img {
   padding-left: 10%;
   padding-right: 10%;
 }
-.aboutCTA button.signIn:hover {
+.instructorCTA button.signIn:hover {
   background-color: #CF9540;
 }
