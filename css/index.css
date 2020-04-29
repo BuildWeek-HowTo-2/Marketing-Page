@@ -574,28 +574,41 @@ footer .footerNav a {
   }
 }
 .titleBar {
-  height: 50vh;
+  height: 30vh;
   width: 100vw;
-  background-image: url(/images/screwdriver.jpg);
+  background-image: url(/images/clipboard.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 .titleBar h2 {
   font-size: 4rem;
   font-style: bold;
-  margin-top: 5%;
+  background: rgba(255, 255, 255, 0.5);
 }
 .main img {
   height: 500px;
+  margin-top: 2%;
+}
+@media (max-width: 800px) {
+  .main img {
+    height: 250px;
+  }
 }
 .main .topText,
 .main .bottomText {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .main .topText,
+  .main .bottomText {
+    width: 90%;
+    margin: 4% 0;
+  }
 }
 .main .topSection,
 .main .bottomSection {
@@ -603,6 +616,12 @@ footer .footerNav a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .main .topSection,
+  .main .bottomSection {
+    flex-direction: column;
+  }
 }
 .main .topSection h3,
 .main .bottomSection h3 {
@@ -612,6 +631,11 @@ footer .footerNav a {
 .main .bottomSection p {
   font-size: 1.8rem;
   margin-top: 4%;
+}
+@media (max-width: 500px) {
+  .main .bottomSection {
+    flex-direction: column-reverse;
+  }
 }
 .instructorCTA {
   padding: 5%;
